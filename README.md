@@ -2,7 +2,7 @@
 
 # Individual Project Demo: https://youtu.be/ApLMhCH1XmE
 
-Github URL: <br>https://github.com/shiro102/Chat-bot-team-20/tree/Anshul
+Github URL: <br>https://github.com/BeefyAdmiral/Individual-Project
 =======
 ## Describe your topic/interest (context of the chatbot, who will use it, etc. )
 
