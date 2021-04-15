@@ -1,12 +1,8 @@
-# Chat-bot-team-20
+# Individual Chat bot Project by Anshul Dhariwal
 
-Link for the first live demo:
-<https://drive.google.com/file/d/1r-Z9tOQUw9xpVBAXJCbN5R_DBIHX0QFv/view>
-<br>
-Link for the second live demo:
-<https://drive.google.com/file/d/1_DKAy2UgbUeMMk6meNT-RrQ6qOt9WOhY/view>
-=======
-Github URL: <br>https://github.com/shiro102/Chat-bot-team-20
+# Individual Project Demo:
+
+Github URL: <br>https://github.com/shiro102/Chat-bot-team-20/tree/Anshul
 =======
 ## Describe your topic/interest (context of the chatbot, who will use it, etc. )
 
@@ -18,7 +14,7 @@ In this project, we developed an interactive conversational agent that responds 
 
 ### **How to run it:** 
 
-To compile the code, we run in terminal these 2 lines of codes - “python train.py” and “python chatbot.py”. The first code is to train the model so that the GUI might function properlyl. The second code is to run the app. Further instructions are in the README file in the CODE folder.
+To compile the code, we run in terminal these 2 files of code - “train.py” and “chatbot.py”. The first code is to train the model which is used by the chatbot to generate responses. The second code is to run the app. Further instructions are in the README file in the CODE folder.
 
 ### **Stages of development:**
 
@@ -61,6 +57,9 @@ There are 12 classes used in the code: nltk, json, pickle, numpy, keras, and tki
 - Class “Home” is the class for our home page in the Graphical User Interface and it contains all features present on that page.
 
 - Class “Recent”, is used to record and store recent conversation dialogue in our recent conversation page in the Graphical User Interface. It contains all features present on that page.
+- # Update
+- Class "FlickrAPI" is used in our chatbot to import and show images from "flickr.com". It is integrated with "wikipedia" so that bot tries search for image based of the wikipedia search results and displays them besides it.
+- Class "googletrans" is used to generate translation based on "Google Translator". So it detects the language and if it is not in English then our chatbot replies with the language detected.
 
 <br>
 
@@ -115,20 +114,44 @@ There are 12 classes used in the code: nltk, json, pickle, numpy, keras, and tki
 
     - Snippet: ![POS Tagging](https://media.discordapp.net/attachments/798946362313408572/823878799355674624/unknown.png)
 
-- Recent Conversation Page
+- Recent Conversation Page (Updated)
 
     - Function: It saves dialogue information everytime our users say "bye" or close the app. With this feature, our users are able to check the dialogue history which is convenient.
 
     - Snippet: ![Recent Conversation Page](https://media.discordapp.net/attachments/798946362313408572/823879216525344768/unknown.png)
+    
+    - Update: Now the recent conversations also save the wikipedia searches which it didn't in the previous version.
+  
+    - Snippet: ![New Recent Converstion Page](https://cdn.discordapp.com/attachments/672366653585096736/832031078914457630/unknown.png)
 
-<br>
 
-## Team Members and nick name used in the project:
-- **Khai Hung Luong (Hung)**: I'm 3rd year comsci student who loves reading books !
-- **Anshul Dhariwal (Anshul)**: I am 3rd year COSC student and loves anything that is interesting to do!!
-- **Jayant Puri (Jayant)**: I'm a 3rd year COSC student who loves watching anime!
-- **Sirus Wang (Sirus)**: I'm a 3rd year COSC student who loves taking photos!
-- **Shaohua Jiang (Joseph)**: I'm a 3rd year math student who loves snowboarding!
+# For Individual Project:
+- Wikipedia (Update):
+    - Function: To search the wikipedia if encountered by 'Proper Nouns' in the user input. Earlier there were some errors in which you had nouns with more than one word then if won't search the complete phrase/nouns instead just part of it. Also, wikipedia tried to provide suggestions in the searches made which gave errors and wrong results. These things were removed and auto suggestions was turned off to provide better output.
+    - Before: ![Old Wikipedia](https://cdn.discordapp.com/attachments/672366653585096736/832034208758497290/unknown.png)
+        
+    - After: ![New Wikipedia](https://cdn.discordapp.com/attachments/672366653585096736/832033247949094952/unknown.png)\
+    
+    - Code: ![Auto Suggest](https://cdn.discordapp.com/attachments/672366653585096736/832035190494068746/unknown.png)
+
+- Flickr:
+    - Function: Topped with wikipedia search, this API searches for relevent images on "flickr.com". It also checks if the image exists on the flickr and if doesn't then it informs the user about it.
+    - Example: ![Flickr Example](https://cdn.discordapp.com/attachments/672366653585096736/832037460384022609/unknown.png)
+
+    - Code part 1: ![Code Flickr1](https://cdn.discordapp.com/attachments/672366653585096736/832040190242717738/unknown.png)
+     
+    - Code part 2: ![Code Flickr2](https://cdn.discordapp.com/attachments/672366653585096736/832040190242717738/unknown.png)
+- Google Translator:
+    - Function: It detects the input language by the user and converses in that language. This encloses the searches made using wikipedia and also the recent conversation also is stored in that language.
+    - Example 1: ![Trans1](https://cdn.discordapp.com/attachments/672366653585096736/832051581946953728/unknown.png)
+    
+    - Example 2: ![Trans2](https://cdn.discordapp.com/attachments/672366653585096736/832056008704131102/unknown.png)
+    
+    - Code 1: ![Trans Code 1](https://cdn.discordapp.com/attachments/672366653585096736/832056866770911303/unknown.png)
+    
+    - Code 2: ![Trans Code 2](https://cdn.discordapp.com/attachments/672366653585096736/832057205904769075/unknown.png)
+    
+    - Code 3: ![Trans Code 3](https://cdn.discordapp.com/attachments/672366653585096736/832057619417399316/unknown.png)
 
 <br>
 
